@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    font-size: 20px;
+}
+body {
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: #f4f9f4;
+}
+a {
+    text-decoration: none;
+}
+.clear {
+    clear: both;
+}
+p {
+    font-family: 'Montserrat';
+}
+ul {
+    list-style: none;
+}
+@keyframes imageShape {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+@keyframes imgNorotate {
+      from {
+          transform: rotate(0deg);
+      }
+      to {
+          transform: rotate(-360deg);
+      }
+  }
+/* header start */
+h1 {
+    width: 14%;
+    float: left;
+}
+h1 > a > img {
+    width: 100%;
+    height: 100%;
+}
+#headerNav {
+    margin-top: 4%;
+    width: 86%;
+    background-color: #e2ede8;
+    float: right;
+}
+#headerNav > ul {
+    text-align: right;
+}
+#headerNav > ul > li {
+    display: inline-block;
+    padding: 16px 21px;
+}
+#headerNav > ul > li > a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #494f4e;
+    font-weight: 800;
+}
+#headerNav > ul > li:hover {
+    background-color: #c7d9d5;
+}
+#headerNav > ul > li:hover a {
+    color: #51605e;
+}
+/*header end*/
+
+
+/*start joing now section*/
+#joinNow {
+    width: 100;
+}
+#joinNowPicture {
+    margin-left: 7%;
+    width: 45%;
+    background-image: url("../img/shape1.png");
+    background-size: 100% 100%;
+    float: left;
+    animation-name: imageShape;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+#joinNowPicture > img {
+    margin: 20%;
+    border-radius: 60%;
+    border: 1px solid #bed2ce;
+    width: 60%;
+    height: 60%;
+    animation-name: imgNorotate;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+#joinNowText {
+    margin-right: 7%;
+    width: 39%;
+    padding: 10% 0;
+    text-align: center;
+    color: #6c9894;
+    float: right;
+}
+h2 {
+    margin-bottom: 34px;
+    font-size:4.6rem;
+    text-transform: uppercase;
+     color: #6c9894;
+}
+#joinNowText > p {
+    font-size: 1rem;
+}
+#joinNowText > button {
+    border-radius: 10px;
+    margin: 24px 0;
+    padding: 8px 24px;
+    background-color: #6c9894;
+    color: #fefefc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*join us end*/
+
+
+/*start lessons description*/
+
+#lessons {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: #6c9894;
+    color: #f4f9f4;
+    text-align: center;
+}
+#lessons > h2 {
+    margin-bottom: 0;
+    color: #f4f9f4;
+}
+#lessons > p {
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.lessonDiv {
+    margin-left: 3%;
+    width: 26%;
+    display: inline-block;
+    cursor: pointer;
+}
+.lessonDivImg {
+    width: 100%;
+    background-image: url("../img/shape2.png");
+    background-size: 100% 100%;
+    animation-name: imageShape;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+.lessonDivImg > img {
+    border-radius: 50%;
+    margin: 15%;
+    width: 70%;
+    height: 70%;
+    animation-name: imgNorotate;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+.lessonDiv > p {
+    font-size: 0.9rem;
+}
+h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #f4f9f4;
+    text-align: center;
+}
+
+/*end lesssons*/
+
+
+/*start instructor*/
+
+#instructor {
+    margin: 50px 0;
+    width: 100%;
+}
+.instructorText {
+    width: 50%;
+    height: 100%;
+    background-color: #6c9894;
+    text-align: left;
+    float: left;
+}
+.instructorText > h2 {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 30%;
+    margin-bottom: 0;
+    color: #f4f9f4;
+}
+.instructorText > p {
+    margin-left: 6%;
+    margin-right: 6%;
+    color: #f4f9f4;
+}
+.instructorImg {
+    width: 50%;
+    float: right;
+}
+.instructorImg > img {
+    width: 100%;
+    height: 100%;
+}
+.instructorText > button {
+    margin-top: 20px;
+    margin-left: 6%;
+    width: 50%;
+    line-height: 36px;
+    background-color: #f4f9f4;
+    color: #6c9894;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+/*end instructor text*/
+
+
+/*start experience*/
+
+#experience {
+    margin: 50px 0;
+    width: 100%;
+}
+#experience > .instructorText {
+    float: right;
+    background-color: #f4f9f4;
+}
+#experience > .instructorText > h2 {
+    color: #6c9894;
+}
+#experience > .instructorText > p {
+    color: #6c9894;
+}
+#experience > .instructorText > button {
+    background-color: #6c9894;
+    color: #f4f9f4;
+}
+#experience > .instructorImg > img {
+    margin: 15%;
+    width: 70%;
+    height: 70%;
+}
+/*end experience*/
+
+
+/*start our stats*/
+#ourStats {
+    width: 100%;
+    text-align: center;
+    color: #6c9894;
+}
+#ourStats > p {
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+#ourStats > h2 {
+    margin-bottom: 20px;
+}
+.ourStat {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 50%;
+    border:5px solid #6c9894;
+    width: 23%;
+    display: inline-block;
+}
+#ourStats > .ourStat > h3 {
+    margin-top: 23%;
+    color: #6c9894;
+    font-weight: 800;
+}
+#pricing {
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    color: #f4f9f4;
+    background-color: #6c9894;
+}
+#pricing > h2 {
+    margin-bottom: 0;
+    color: #f4f9f4;
+}
+.pricingDiv {
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 24%;
+    min-width: 280px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 40px 26px 26px 26px;
+    background-color: #f4f9f4;
+}
+.pricingShape {
+    margin-top: 16px;
+}
+.pricingDiv > h3 {
+    color: #6c9894;
+}
+.pricingDiv > button {
+    border-radius: 10px;
+    width: 100%;
+    line-height: 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: #6c9894;
+    color: #f4f9f4;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+/*start trainer section*/
+
+#trainer {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-image: url("../img/backgroundTrainer.png");
+    background-size: 100% 100%;
+}
+#trainerImg {
+    margin: 70px auto;
+    width: 28%;
+    background-image: url("../img/shape1.png");
+    background-size: 100% 100%;
+    animation-name: imageShape;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+#trainerImg > img {
+    border-radius: 50%;
+    margin: 15% 15%;
+    width: 70%;
+    height: 70%;
+    animation-name: imgNorotate;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+#trainer > h2 {
+    margin-top: 64px;
+    color: #6c9894;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+#trainer > p {
+    margin-left: 5%; 
+    margin-right: 5%;
+    color: #6c9894;
+    font-size: 1.8rem;
+}
+
+/*end trainer*/
+
+/*start subscribe*/
+
+#subscribe {
+    margin-top: 100px;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    width: 100%;
+    text-align: center;
+    background-color: #6c9894;
+}
+#subscribe > h2 {
+    color: #f4f9f4;
+}
+#subscribe > p {
+    color: #f4f9f4;
+}
+#subscribeInput {
+    margin-top: 50px;
+    border-radius: 40px;
+    padding-left: 15px;
+    width: 50%;
+    height: 50px;
+    background-color: #f4f9f4;
+    font-size: 1.2rem;
+}
+#subscribe > button {
+    border-radius: 40px;
+    padding-right:10px;
+    padding-left:10px;
+    line-height: 50px;
+    color: #6c9894;
+    background-color: #f4f9f4;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    top: -3px;
+    left: -60px;
+}
+/*footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #6c9894;
+    text-transform: capitalize;
+}
+.footerTitle > h3 {
+    text-align: left;
+    color: #6c9894;
+}
+h4 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.footerTitle {
+    margin-top: 60px;
+    max-width: 490px; 
+}
+.footerTitle > nav > ul > li > a {
+    color: #6c9894;
+    text-transform: capitalize;
+}
+.footerTitle > nav > ul > li > a:hover {
+    text-decoration: underline;
+}
+/*medea screens*/
+@media screen and (max-width: 1303px){
+    h2{
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    .pricingDiv > h3 {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1136px){
+    h2{
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .pricingDiv > h3 {
+        font-size: 1.6rem;
+    }
+    #trainer > p {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 900px){
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+ #joinNowText > p, .ourStat > p, .lessonDiv > p{
+        display: none;
+    }
+    .pricingDiv > h3 {
+        font-size: 1.6rem;
+    } 
+    #trainer > p {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 630px){
+    h3 {
+        font-size: 0.8rem;
+    }
+    .pricingDiv > h3 {
+        font-size: 1.6rem;
+    }
+    #trainer > p {
+        font-size: 1rem;
+    }
+    #trainer > h2 {
+        font-size: 2.5rem;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 573px){
+    #headerNav> ul > li > a {
+        font-size: 0.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    h3 {
+        font-size: 0.65rem;
+    }
+    .pricingDiv > h3 {
+        font-size: 1.6rem;
+    }
+    #trainer > p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 500px){
+    #headerNav> ul > li > a {
+        font-size: 0.68rem;
+    }
+    
+.instructorText > h2 {
+    margin-top: 10%;
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: 'Myriad Pro',sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        img {
+            width: 100%;
+        }
+        tr,td,tbody {
+            display: block;
+            width: 100%;
+        }
+        #wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+            width: 100%;
+        } 
+        #intro {
+            padding-top: 80px;
+            padding-bottom: 100px;
+            display: block;
+            width: 100%;
+            background-image: url(introBg.jpg);
+            text-align: center;
+        }
+        #intro h1,h2,h4,.button {
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        #intro h2 {
+            margin-top: 30px;
+            font-size: 50px;
+        }
+        #intro h4 {
+            margin-top: 14px;
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+        .button {
+            border-radius: 50px;
+            padding: 14px 50px;
+            background-color: #50c3af;
+            font-size: 15px;
+        }
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 600px;    
+        }
+        #blogs {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: block;
+            text-align: center;
+        }
+        #about-us {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px; 
+            background-color: #eeeeef;
+            display: block;
+            text-align: center;
+        }
+        .about-us-article {
+            margin-top: 20px;
+            width: 32%;
+            min-width: 190px;
+            display: inline-block;
+        }
+        .about-us-article h3 {
+            margin: 14px 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #384048;
+            line-height: 24px;
+            font-weight: 600;
+        }
+        .about-us-article p {
+            font-size: 14px;
+            line-height: 18px;
+            color: #787b80;
+        }
+        .img-icon {
+            text-align: center;
+            width: 15%;
+            display: inline-block;
+        }
+        .blog-article {
+            margin-top: 20px;
+            width: 49%;
+            min-width: 264px;
+            display: inline-block;
+            text-align: left;
+        }
+        .blog-image {
+            margin: 20px auto 0;
+            max-width: 264px;
+            height: 167px;
+            width: 90%;
+            display: inline-block;
+            overflow: hidden;
+            text-align: left;
+        }
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+        }
+        .blog-article h3 {
+            margin: 30px 0;
+            font-size: 18px;
+            color: #384048;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .blog-article p {
+            margin-bottom: 40px;
+            font-size: 14px;
+            color: #787b80;
+        }
+        .blog-article .button {
+            text-transform: capitalize;
+        }
+        .quote {
+            width: 100%;
+            display: block;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #eeeeef;
+            text-align: center;
+        }
+        .quote h2 {
+            font-size: 18px;
+            line-height: 18px;
+            color: #384048;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .quote p {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: 14px;
+            color: #787b80;
+        }
+        .quote .button {
+            margin-top: 20px;
+            background-color: #d2d5da;
+        }
+        #tumb-blog {
+            width: 100%;
+            display: block;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .tumb-blog-article {
+            margin-top: 20px;
+            display: inline-block;
+            width: 32%;
+            min-width: 191px;
+            text-align: left;
+        }
+        .tumb-blog-article-img {
+            width: 100%;
+        }
+        .tumb-blog-article h3 {
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #384048;
+
+        }
+        .tumb-blog-article p {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #787b80;
+        }
+        .tumb-blog-article .tumb-button {
+            display: block;
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #50c3af;
+            text-transform: capitalize;
+        }
+        .quote-article {
+            margin-top: 40px;
+            display: inline-block;
+            width: 49.5%;
+            min-width: 295px;
+        }
+        .quote-article .button {
+            background-color: #50c3af;
+        }
+        #footer-article {
+            display: block;
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        #footer-article-img {
+            margin-top: 20px;
+            display: inline-block;
+            width: 49%;
+            min-width: 271px;
+        }
+        #footer-article-text {
+            display: inline-block;
+            width: 45%;
+            padding-left: 20px;
+        }
+        #footer-article-text h3 {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 24px;
+            color: #293139;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        #footer-article-text p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #787b80;
+            font-size: 14px;
+            line-height: 21px;    
+            text-align: left;
+        }
+        #footer-article-text .button {
+            margin-top: 20px;
+            background-color: #d2d5da;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <table id="wrapper">
+        <tr>
+            <td>
+                <table id="intro">
+                    <tr>
+                        <td>
+                            <h1>Logo</h1>
+                            <h2>Have a good day</h2>
+                            <h4>just for you</h4>
+                            <span class="button">Get your copy now</span>
+                        </td>
+                    </tr>
+                </table>
+                <table id="about-us">
+                    <tr>
+                        <td>
+                            <table class="container">
+                                <tr>
+                                    <td>
+                                        <table class="about-us-article">
+                                            <tr>
+                                                <td>
+                                                    <span class="img-icon">
+                                                        <img src="profesionals.jpg" alt="people-icon"/>
+                                                    </span>
+                                                    <h3>profesionals</h3>
+                                                    <p>Lorem ipsum dolor sit ametconsectetur elit. </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="about-us-article">
+                                            <tr>
+                                                <td>
+                                                    <span class="img-icon">
+                                                        <img src="heart.jpg" alt="people-icon"/>
+                                                    </span>
+                                                    <h3>amateurs</h3>
+                                                    <p>Lorem ipsum dolor sit ametconsectetur elit. </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="about-us-article">
+                                            <tr>
+                                                <td>
+                                                    <span class="img-icon">
+                                                        <img src="headphones.jpg" alt="people-icon"/>
+                                                    </span>
+                                                    <h3>for everyone</h3>
+                                                    <p>Lorem ipsum dolor sit ametconsectetur elit. </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="container">
+                    <tr>
+                        <td>
+                            <table id="blogs">
+                                <tr>
+                                    <td>
+                                        <table class="blog-article">
+                                            <tr>
+                                                <td>
+                                                   <span class="blog-image">
+                                                       <img src="photo2.jpg" alt="responsive email"/>
+                                                   </span> 
+                                                   <h3>responsive email template</h3>
+                                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis</p>
+                                                   <span class="button">read more</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="blog-article">
+                                            <tr>
+                                                <td>
+                                                   <span class="blog-image">
+                                                       <img src="photo1.jpg" alt="responsive email"/>
+                                                   </span> 
+                                                   <h3>fully compatible template</h3>
+                                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis</p>
+                                                   <span class="button">read more</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="quote">
+                    <tr>
+                        <td>
+                            <table class="container">
+                                <tr>
+                                    <td>
+                                        <h2>Fully Supported template</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem commodo vitae. Ut semper semper lacus. Suspendisse convallis vel tellus at consectetur. Aenean risus arcu
+                                        </p>
+                                        <span class="button">read more</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="container">
+                    <tr>
+                        <td>
+                            <table id="tumb-blog">
+                                <tr>
+                                    <td>
+                                        <table class="tumb-blog-article">
+                                            <tr>
+                                                <td>
+                                                    <span class="tumb-blog-article-img">
+                                                        <img src="tumb1.jpg" alt="fully layred psd"/>
+                                                    </span>
+                                                    <h3>fully responsive</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                    <span class="tumb-button">check this out ></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="tumb-blog-article">
+                                            <tr>
+                                                <td>
+                                                    <span class="tumb-blog-article-img">
+                                                        <img src="tumb2.jpg" alt="fully layred psd"/>
+                                                    </span>
+                                                    <h3>fully responsive</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                    <span class="tumb-button">check this out ></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="tumb-blog-article">
+                                            <tr>
+                                                <td>
+                                                    <span class="tumb-blog-article-img">
+                                                        <img src="tumb3.jpg" alt="fully layred psd"/>
+                                                    </span>
+                                                    <h3>fully responsive</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                    <span class="tumb-button">check this out ></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="quote">
+                    <tr>
+                        <td>
+                            <table class="container">
+                                <tr>
+                                    <td>
+                                        <table class="quote-article">
+                                            <tr>
+                                                <td>
+                                                    <h2>send it now</h2>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
+                                                    <span class="button">Read more</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="quote-article">
+                                            <tr>
+                                                <td>
+                                                    <h2>very nice to see</h2>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
+                                                    <span class="button">Read more</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="container">
+                    <tr>
+                        <td>
+                            <table id="footer-article">
+                                <tr>
+                                    <td>
+                                        <span id="footer-article-img">
+                                            <img src="footerimg.jpg" alt="footer article img"/>
+                                        </span>
+                                        <span id="footer-article-text">
+                                            <h3>just for you</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam inventore placeat dignissimos impedit cupiditate ut, laudantium ex qui aut eos nisi vero numquam iusto temporibus id consequuntur, dolorum dolor ullam!</p>
+                                            <span class="button">read more</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
